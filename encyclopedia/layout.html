@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="sidebar col-lg-2 col-md-3">
+                <h2>Wiki</h2>
+                <form>
+                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+                </form>
+                <div>
+                    <a href="{% url 'index' %}">Home</a>
+                </div>
+                <div>
+                    Create New Page
+                </div>
+                <div>
+                    Random Page
+                </div>
+                <div>
+                    About Wiki
+                </div>
+                <div>   
+                    Contact Us
+                </div>
+                <div>
+                    Donate
+                </div>
+
+                <div>
+                    Help
+                </div>
+                <div>
+                    Learn to Edit
+                </div>
+                <div>
+                    Community portal
+                </div>
+                <div>
+                    Recent changes
+                </div>
+                <div>
+                    Upload File
+                </div>
+
+                <div>
+                    What links here
+                </div>
+                <div>
+                    Related changes
+                </div>
+                <div>
+                    Special pages
+                </div>
+                <div>
+                    Permanent link
+                </div>
+                <div>
+                    Page information
+                </div>
+                <div>
+                    Wikidata item
+                </div>
+
+                 <div>
+                    Download as PDF
+                </div>
+                <div>
+                    Printable Version
+                </div>
+
+                <div>
+                    Wikimedia Commons
+                </div>
+                <div>
+                    MediaWiki
+                </div>
+                <div>
+                    Meta-Wiki
+                </div>
+                <div>
+                    Wikispecies
+                </div>
+                <div>
+                    Wikibooks
+                </div>
+                <div>
+                    Wikidata
+                </div>
+                <div>
+                    Wikimania
+                </div>
+                <div>
+                    Wikinews
+                </div>
+                <div>
+                    Wikiquote
+                </div>
+                <div>
+                    Wikisource
+                </div>
+                <div>
+                    Wikiversity
+                </div>
+                <div>
+                    Wikivoyage
+                </div>
+                <div>
+                    Wiktionary
+                </div>
+
+
+
+
+                {% block nav %}
+                 
+
+                {% endblock %}
+            </div>
+            <div id = "mainbody" class="main col-lg-10 col-md-9">
+               
+            </div>
+        </div>
+
+    </body>
+</html>
